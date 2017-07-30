@@ -1,0 +1,57 @@
+.graphic-section-ships {
+    background-image: url(~/assets/images/sea_bg.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ships {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    background-image: url(~/assets/images/ships.png);
+    background-size: 500px;
+    background-position: center;
+    background-repeat: repeat-x;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.graphic-section-palettes {
+    background-color: #D8D8D8;
+    overflow: hidden;
+}
+
+.palettes {
+    width: 300%;
+    height: 300%;
+    top: -100%;
+    left: -100%;
+    -webkit-transform: rotate(-45deg) translate3d(0, 0 ,0);
+            transform: rotate(-45deg) translate3d(0, 0 ,0);
+    position: absolute;
+    background-image: url(/assets/images/palette.png);
+    background-size: 200px;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.graphic-section-warehouse {
+    background-image: url(~/assets/images/warehouse.svg);
+    overflow: hidden;
+    background-size: cover;
+    background-position-x: 0px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.graphic-section-arrow {
+    background-image: url(~/assets/images/arrow.svg);
+    background-color: #F3F9FC;
+    overflow: hidden;
+    background-size: 60%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+}

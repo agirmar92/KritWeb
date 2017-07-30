@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: VistaSansAlt;
+    src: url(~/assets/fonts/VistaSansAltMed.ttf);
+}
+
+@font-face {
+    font-family: VistaSansMed;
+    src: url(~/assets/fonts/VistaSansMed.ttf);
+}
+
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    font-family: VistaSansMed;
+    color: #494949;
+}
+
+app-header > div,
+app-content-section > div,
+app-graphic-section > span > div,
+app-footer > div {
+    width: 100%;
+    min-height: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.krit-logo {
+    width: 127px;
+    height: 65px;
+    background-image: url(~/assets/images/krit_logo.png);
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    top: 73px;
+    left: 114px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+a { 
+    color: inherit;
+    text-decoration: none;
+ } 

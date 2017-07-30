@@ -1,0 +1,13 @@
+<span [ngSwitch]="graphicName">
+  <div *ngSwitchCase="'ships'" class="graphic-section-ships">
+    <div class="ships" appSailOnScroll></div>
+  </div>
+  
+  <div *ngSwitchCase="'palettes'" class="graphic-section-palettes">
+    <div class="palettes" appPanOnScroll></div>
+  </div>
+
+  <div *ngSwitchCase="'warehouse'" class="graphic-section-warehouse" appWarehousePanOnScroll></div>
+  
+  <div *ngSwitchCase="'arrow'" class="graphic-section-arrow"></div>
+</span>

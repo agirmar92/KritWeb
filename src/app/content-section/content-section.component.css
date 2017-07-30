@@ -1,0 +1,65 @@
+.content-section {
+    background-color: #fff;
+}
+
+.bookmark-graphic {
+    width: 89px;
+    height: 360px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    top: 70px;
+    left: 0px;
+}
+
+.bookmark-0 {
+    background-image: url(~/assets/images/bookmark_graphic_0.png);
+}
+
+.bookmark-1 {
+    background-image: url(~/assets/images/bookmark_graphic_1.png);
+}
+
+.bookmark-2 {
+    background-image: url(~/assets/images/bookmark_graphic_2.png);
+}
+
+.bookmark-3 {
+    background-image: url(~/assets/images/bookmark_graphic_3.png);
+}
+
+.bookmark-4 {
+    background-image: url(~/assets/images/bookmark_graphic_4.png);
+}
+
+.krit-logo {
+    top: 70px;
+}
+
+.content {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding-left: 460px;
+    padding-top: 100px;
+}
+
+.menu-list {
+    display: inline-block;
+    position: absolute;
+    list-style: none;
+    left: 114px;
+    top: 230px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: VistaSansAlt;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.menu-list li {
+    margin-bottom: 23px;
+}

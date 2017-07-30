@@ -1,0 +1,51 @@
+.krit-header {
+    text-align: center;
+    background-color: #F3F9FC; 
+    background-image: url(~/assets/images/header_graphic.svg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.krit-down-arrow {
+    width: 39px;
+    height: 39px;
+    background-image: url(~/assets/images/down_arrow.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 25px;
+    left: 114px;
+}
+
+.header-content {
+    max-width: 615px;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: bold;
+    color: #4a4a4a;
+    font-family: VistaSansAlt;
+    margin-bottom: 52px;
+    line-height: 61px;
+    letter-spacing: 2px;
+}
+
+p {
+    color: rgba(74, 74, 74, 0.85);
+    font-size: 28px;
+    line-height: 32px;
+}
