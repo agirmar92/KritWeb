@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { ScrollToModule } from 'ng2-scroll-to';
@@ -26,7 +25,6 @@ import { WarehousePanOnScrollDirective } from './warehouse-pan-on-scroll.directi
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     ScrollToModule.forRoot(),
   ],
   providers: [],
