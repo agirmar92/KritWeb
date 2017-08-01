@@ -28,6 +28,20 @@ app-footer > div {
     min-height: 100%;
     overflow: auto;
     position: relative;
+    overflow-x: hidden;
+}
+
+app-content-section > div,
+app-header > div {
+    z-index: 1;
+}
+
+app-content-section > div {
+    margin-bottom: 100vh;
+}
+
+app-content-section:last-of-type > div {
+    margin-bottom: 0;
 }
 
 .krit-logo {

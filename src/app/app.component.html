@@ -4,27 +4,27 @@
 
 <!-- CONTENT BEGINS -->
 <!-- Ný fjármögnunarleið -->
-<app-content-section bookmarkIndex="0" id="section-0"></app-content-section>
-<app-graphic-section graphicName="ships"></app-graphic-section>
+<app-content-section contentName="ships" (topContent)="onTopContent($event)" bookmarkIndex="0" id="section-0"></app-content-section>
+<app-graphic-section graphicName="ships" *ngIf="currGraphic === 'ships'"></app-graphic-section>
 
 <!-- Um Krít -->
-<app-content-section bookmarkIndex="0"></app-content-section>
-<app-graphic-section graphicName="palettes"></app-graphic-section>
+<app-content-section contentName="palettes" (topContent)="onTopContent($event)" bookmarkIndex="0"></app-content-section>
+<app-graphic-section graphicName="palettes" *ngIf="currGraphic === 'palettes'"></app-graphic-section>
 <!-- /CONTENT ENDS -->
 
 <!-- Hafðu samband -->
-<app-content-section bookmarkIndex="1" id="section-1"></app-content-section>
-<app-graphic-section graphicName="warehouse"></app-graphic-section>
+<app-content-section contentName="warehouse" (topContent)="onTopContent($event)" bookmarkIndex="1" id="section-1"></app-content-section>
+<app-graphic-section graphicName="warehouse" *ngIf="currGraphic === 'warehouse'"></app-graphic-section>
 <!-- /CONTENT ENDS -->
 
 <!-- Samstarfsaðili -->
-<app-content-section bookmarkIndex="2" id="section-2"></app-content-section>
-<app-graphic-section graphicName="arrow"></app-graphic-section>
+<app-content-section contentName="arrow" (topContent)="onTopContent($event)" bookmarkIndex="2" id="section-2"></app-content-section>
+<app-graphic-section graphicName="arrow" *ngIf="currGraphic === 'arrow'"></app-graphic-section>
 <!-- /CONTENT ENDS -->
 
 <!-- Samstarfsaðili -->
 <app-content-section bookmarkIndex="3" id="section-3"></app-content-section>
-<app-graphic-section graphicName="ships"></app-graphic-section>
+<!-- <app-graphic-section graphicName=""></app-graphic-section> -->
 <!-- /CONTENT ENDS -->
 
 <!-- FOOTER BEGINS -->

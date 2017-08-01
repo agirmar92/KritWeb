@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, HostListener, EventEmitter, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-content-section',
@@ -8,9 +8,23 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ContentSectionComponent implements OnInit {
 
   @Input() bookmarkIndex: number;
+  @Input() contentName: string;
+
+  @Output() topContent: EventEmitter<any> = new EventEmitter();
+
+  @ViewChild('contentSection') contentSection: ElementRef;
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() { console.log(this.contentSection); }
+
+  @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
+    const el = this.contentSection.nativeElement;
+    const parent = this.contentSection.nativeElement.offsetParent;
+
+    if (el.offsetTop <= parent.scrollTop && (el.offsetTop + el.clientHeight * 2) > parent.scrollTop) {
+      this.topContent.emit(this.contentName);
+    }
+  }
 
 }
