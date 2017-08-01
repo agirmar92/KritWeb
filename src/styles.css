@@ -63,3 +63,7 @@ a {
     color: inherit;
     text-decoration: none;
  } 
+
+ app-graphic-section.top-graphic > span > div {
+     z-index: -1 !important;
+ }
