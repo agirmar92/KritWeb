@@ -11,7 +11,93 @@
     </ul>
   </div>
 
-  <div class="content">
-    content
+  <div class="content" [ngSwitch]="id">
+    <span *ngSwitchCase="'section-0'">
+
+      <h2>Ný fjármögnunarleið á Íslandi</h2>
+
+      <div class="krit-content-box">
+        <span class="content-left-section round-end"></span>
+        <span class="content-right-section round-end reversed"></span>
+
+        <span class="content-middle-section">
+          <p class="bold no-margin-top">Hagkvæm lausn fyrir vaxandi fyrirtæki</p>
+          <p>Með hjálp Krítar eru vörukaup fljótleg og einföld. Þú sendir okkur reikning frá birgja og nauðsynlegar bankaupplýsingar hans. Þegar þessar upplýsingar liggja fyrir og Eimskip hefur staðfest móttöku vörusendingarinnar greiðum við reikninginn beint til seljanda. Þú endurgreiðir okkur svo þegar þú leysir út vörurnar úr vörugeymslu Eimskips. Þú ræður jafnframt hvort þú leysir út vörurnar í heild eða að hluta.</p>
+          <p>Þjónusta Krítar hentar flestum fyrirtækjum sem stunda innflutning. Þó eru ákveðnir vöruflokkar sem við fjármögnum ekki, svo sem fersk matvæli, tískufatnaður og fleira.</p> 
+        </span>
+      </div>
+
+    </span>
+
+    <span *ngSwitchCase="'section-0b'">
+
+      <div class="krit-content-box">
+        <span class="content-left-section triangle-end"></span>
+        <span class="content-right-section triangle-end reversed"></span>
+
+        <span class="content-middle-section">
+          <p class="bold no-margin-top">Tryggðu þér hagstæðasta verðið frá birgjum</p>
+          <p class="no-margin-bottom">Vöxtur kallað á aukið fjármagn. Krít hjálpar þínu fyrirtæki að vaxa með því að staðgreiða vörukaupin. Þannig tryggir þú þínu fyrirtæki hagstæðasta verðið frá erlendum birgjum og innkaupin ganga eins og best verður á kosið. Þú getur greitt inn á lánið hvenær sem er til að minnka fjármagnskostnað.</p>
+        </span>
+      </div>
+
+      <div class="krit-content-box">
+        <span class="content-left-section bracket-end"></span>
+        <span class="content-right-section bracket-end reversed"></span>
+
+        <span class="content-middle-section">
+          <p class="bold no-margin-top">Reksturinn léttari í vöfum</p>
+          <p>Við gerum samning við þig til eins árs í senn og þegar fjármögnunarsamningur liggur fyrir ganga vörukaupin hratt fyrir sig. Sjóðsstaða þín verður betri auk þess sem auðveldara er að stýra birgðahaldi. Með þjónustu Krítar þarftu jafnframt ekki að binda aðrar eignir fyrirtækisins sem veð fyrir láninu.</p>
+        </span>
+      </div>
+
+    </span>
+
+    <span *ngSwitchCase="'section-1'">
+
+      <div class="krit-content-box">
+        <span class="content-left-section round-end reversed"></span>
+        <span class="content-right-section round-end"></span>
+
+        <span class="content-middle-section">
+          <p class="bold no-margin-top">Um Krít</p>
+          <p>Mus sumquat aliquasitia sit pro cor mo et quo quatist emolupt aessedit et optae posaepernam aut verit occust acersperem ex eatur rerist et apedit accaborem nonsequ aspereh enestis etus moloreperia sequi volorundis re optatam, culless intiorum re magnimenia sit, si id quaessum atet, volorem laturib eaquam des si vellab incitiae vid quaest rectur?</p>
+          <p>Lentemporae necum reicillacit uta comnim dit quidescitae nam, aut escid utasper namendi debis aspelesto blaboreptae volorum vit pe nobis re volum facescium in cum asitamu sdaecae eturitation nonecte ctibusam siti blatesti nimus earuptaero vereiciam sam am aruptio rporesto totatioribus aut venteni magnima gnihil id quiducima doluptinum id quas dus eat erum repedipit faceperum qui restint ipsaes nis dellupti duciusa dolum, volendit fuga. Nequiasperia volest, utempor autem quias dolenimus, qui ilibus dolorem porporepedi quia comnit, voluptat offictur?</p>
+        </span>
+      </div>
+
+    </span>
+
+    <span *ngSwitchCase="'section-2'">{{id}}</span>
+
+    <span *ngSwitchCase="'section-3'">
+
+      <div class="krit-content-box">
+        <span class="content-left-section triangle-end reversed"></span>
+        <span class="content-right-section triangle-end"></span>
+
+        <span class="content-middle-section">
+          <p class="bold no-margin-top">Samstarfsaðili</p>
+          <p>Mus sumquat aliquasitia sit pro cor mo et quo quatist emolupt aessedit et optae posaepernam aut verit occust acersperem ex eatur rerist et apedit accaborem nonsequ aspereh enestis etus moloreperia sequi volorundis re optatam, culless intiorum re magnimenia sit, si id quaessum atet, volorem laturib eaquam des si vellab incitiae vid quaest rectur?</p>
+          <p>Lentemporae necum reicillacit uta comnim dit quidescitae nam, aut escid utasper namendi debis aspelesto blaboreptae volorum vit pe nobis re volum facescium in cum asitamu sdaecae eturitation nonecte ctibusam siti blatesti nimus earuptaero vereiciam sam am aruptio rporesto totatioribus aut venteni magnima gnihil id quiducima doluptinum id quas dus eat erum repedipit faceperum qui restint ipsaes nis dellupti duciusa dolum, volendit fuga. Nequiasperia volest, utempor autem quias dolenimus, qui ilibus dolorem porporepedi quia comnit, voluptat offictur?</p>
+        </span>
+      </div>
+
+    </span>
+
+    <span *ngSwitchCase="'section-4'">
+
+      <div class="krit-content-box">
+        <span class="content-left-section bracket-end reversed"></span>
+        <span class="content-right-section bracket-end"></span>
+
+        <span class="content-middle-section">
+          <p class="bold no-margin-top">Viðskiptavinir</p>
+          <p>Mus sumquat aliquasitia sit pro cor mo et quo quatist emolupt aessedit et optae posaepernam aut verit occust acersperem ex eatur rerist et apedit accaborem nonsequ aspereh enestis etus moloreperia sequi volorundis re optatam, culless intiorum re magnimenia sit, si id quaessum atet, volorem laturib eaquam des si vellab incitiae vid quaest rectur?</p>
+          <p>Lentemporae necum reicillacit uta comnim dit quidescitae nam, aut escid utasper namendi debis aspelesto blaboreptae volorum vit pe nobis re volum facescium in cum asitamu sdaecae eturitation nonecte ctibusam siti blatesti nimus earuptaero vereiciam sam am aruptio rporesto totatioribus aut venteni magnima gnihil id quiducima doluptinum id quas dus eat erum repedipit faceperum qui restint ipsaes nis dellupti duciusa dolum, volendit fuga. Nequiasperia volest, utempor autem quias dolenimus, qui ilibus dolorem porporepedi quia comnit, voluptat offictur?</p>
+        </span>
+      </div>
+
+    </span>
   </div>
 </div>

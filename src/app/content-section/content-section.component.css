@@ -38,11 +38,11 @@
 }
 
 .content {
+    box-sizing: border-box;
     display: inline-block;
     height: 100%;
     width: 100%;
-    padding-left: 460px;
-    padding-top: 100px;
+    padding: 106px 25% 0 25%;
 }
 
 .menu-list {
@@ -62,4 +62,74 @@
 
 .menu-list li {
     margin-bottom: 23px;
+}
+
+.krit-content-box {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.krit-content-box:first-of-type {
+    margin-top: 0px;
+}
+
+.krit-content-box > .content-left-section,
+.krit-content-box > .content-right-section {
+    position: absolute;
+    min-width: 56px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.krit-content-box > .round-end {
+    background-image: url(~/assets/images/round-end.svg);
+}
+
+.krit-content-box > .triangle-end {
+    background-image: url(~/assets/images/triangle-end.svg);
+}
+
+.krit-content-box > .bracket-end {
+    background-image: url(~/assets/images/bracket-end.svg);
+}
+
+.krit-content-box > .content-left-section {
+    left: 0;
+}
+
+.krit-content-box > .content-right-section {
+    right: 0;
+}
+
+.krit-content-box > .reversed {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+
+.krit-content-box > .content-middle-section {
+    height: 100%;
+    margin: 0 56px;
+    display: inline-block;
+    padding: 0 27px;
+}
+
+h2 {
+    font-family: VistaSansAlt;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 83px 55px 83px;
+}
+
+p {
+    font-family: VistaSansLight;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 20px 0;
+}
+
+p.bold {
+    font-family: VistaSansMed;
 }
