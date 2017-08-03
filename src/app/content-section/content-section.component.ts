@@ -16,7 +16,7 @@ export class ContentSectionComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() { console.log(this.contentSection); }
+  ngOnInit() { }
 
   @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
     const el = this.contentSection.nativeElement;

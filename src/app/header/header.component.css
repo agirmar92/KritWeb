@@ -27,6 +27,11 @@
     position: absolute;
     bottom: 25px;
     left: 114px;
+
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
 }
 
 .header-content {

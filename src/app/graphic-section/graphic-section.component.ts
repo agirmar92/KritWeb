@@ -12,12 +12,8 @@ export class GraphicSectionComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    console.log(this.graphicName);
-  }
+  ngOnInit() { }
 
-  sailForward(event) {
-    console.log(event);
-  }
+  sailForward(event) { }
 
 }
