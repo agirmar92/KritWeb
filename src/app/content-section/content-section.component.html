@@ -68,7 +68,20 @@
 
     </span>
 
-    <span *ngSwitchCase="'section-2'">{{id}}</span>
+    <span *ngSwitchCase="'section-2'">
+
+      <h2>Hafðu samband</h2>
+
+      <div class="krit-content-box">
+        <span class="content-left-section"></span>
+        <span class="content-right-section"></span>
+
+        <span class="content-middle-section">
+          <app-contact-form></app-contact-form>
+        </span>
+      </div>
+
+    </span>
 
     <span *ngSwitchCase="'section-3'">
 

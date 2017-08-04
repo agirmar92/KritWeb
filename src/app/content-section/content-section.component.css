@@ -111,9 +111,10 @@
 
 .krit-content-box > .content-middle-section {
     height: 100%;
-    margin: 0 56px;
     display: inline-block;
-    padding: 0 27px;
+    padding: 0 83px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 h2 {

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { ScrollToModule } from 'ng2-scroll-to';
 
@@ -11,6 +12,7 @@ import { GraphicSectionComponent } from './graphic-section/graphic-section.compo
 import { SailOnScrollDirective } from './sail-on-scroll.directive';
 import { PanOnScrollDirective } from './pan-on-scroll.directive';
 import { WarehousePanOnScrollDirective } from './warehouse-pan-on-scroll.directive';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +23,13 @@ import { WarehousePanOnScrollDirective } from './warehouse-pan-on-scroll.directi
     GraphicSectionComponent,
     SailOnScrollDirective,
     PanOnScrollDirective,
-    WarehousePanOnScrollDirective
+    WarehousePanOnScrollDirective,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
     ScrollToModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
