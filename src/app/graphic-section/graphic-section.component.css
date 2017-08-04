@@ -14,7 +14,7 @@
     position: absolute;
     right: 0px;
     background-image: url(~/assets/images/ships.png);
-    background-size: 500px;
+    background-size: 23%;
     background-position: center;
     background-repeat: repeat-x;
     -webkit-transform: translate3d(0, 0, 0);
