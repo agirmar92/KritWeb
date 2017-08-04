@@ -31,10 +31,10 @@
 }
 
 .palettes {
-    width: 300%;
-    height: 300%;
-    top: -100%;
-    left: -100%;
+    width: 400%;
+    height: 400%;
+    top: -200%;
+    left: -200%;
     -webkit-transform: rotate(-45deg) translate3d(0, 0 ,0);
             transform: rotate(-45deg) translate3d(0, 0 ,0);
     position: absolute;
