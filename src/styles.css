@@ -68,16 +68,31 @@ app-content-section:last-of-type > div {
 a { 
     color: inherit;
     text-decoration: none;
- } 
+}
 
- app-graphic-section.top-graphic > span > div {
-     z-index: -1 !important;
- }
+app-graphic-section.top-graphic > span > div {
+    z-index: -1 !important;
+}
 
- .no-margin-top {
-     margin-top: 0px;
- }
+.no-margin-top {
+    margin-top: 0px;
+}
 
- .no-margin-bottom {
-     margin-bottom: 0px;
- }
+.no-margin-bottom {
+    margin-bottom: 0px;
+}
+
+/* For screens 768px wide or smaller */
+@media (max-width: 768px) {
+    .krit-down-arrow {
+        display: none;
+    }
+
+    .krit-header .krit-logo {
+        display: none;
+    }
+
+    app-content-section > div {
+        margin-bottom: 0;
+    }
+}

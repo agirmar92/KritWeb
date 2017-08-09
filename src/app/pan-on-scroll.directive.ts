@@ -6,7 +6,7 @@ import { Directive, HostListener, ElementRef } from '@angular/core';
 export class PanOnScrollDirective {
 
   private palettes;
-  private currLeftPos = -200;
+  private currLeftPos = -100;
   private lastScrollTop = 0;
 
   constructor(el: ElementRef) {
@@ -26,7 +26,7 @@ export class PanOnScrollDirective {
 
     // Reset left position if we have gone too far
     if (this.currLeftPos > -1 || this.currLeftPos < -399) {
-      this.currLeftPos = -200;
+      this.currLeftPos = -100;
     }
 
     // Change the style to the new position

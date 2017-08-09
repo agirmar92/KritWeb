@@ -54,3 +54,38 @@ p {
     font-size: 28px;
     line-height: 32px;
 }
+
+/* For screens 768px wide or smaller */
+@media (max-width: 768px) {
+    .krit-down-arrow {
+        display: none;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 32px;
+        text-align: left;
+        margin: 0 40px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 20px;
+        text-align: left;
+        margin: 0 40px;
+    }
+
+    .krit-header {
+        min-height: 0;
+        height: calc(100% - 60px);
+        margin-top: 60px;
+        background-size: 90% !important;
+    }
+}
+
+/* For screens 425px wide or smaller */
+@media (max-width: 425px) {
+    .krit-header {
+        background-size: 120% !important;
+    }
+}

@@ -34,7 +34,7 @@
     width: 400%;
     height: 400%;
     top: -200%;
-    left: -200%;
+    left: -100%;
     -webkit-transform: rotate(-45deg) translate3d(0, 0 ,0);
             transform: rotate(-45deg) translate3d(0, 0 ,0);
     position: absolute;
@@ -79,4 +79,21 @@ h1 {
     text-align: center;
     color: #0064a6;
     margin-top: 110px;
+}
+
+/* For screens 768px wide or smaller */
+@media (max-width: 768px) {
+    .graphic-section-ships,
+    .graphic-section-palettes,
+    .graphic-section-warehouse,
+    .graphic-section-arrow {
+        position: relative;
+        height: 50vh;
+        min-height: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 52px;
+    }
 }

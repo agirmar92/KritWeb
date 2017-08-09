@@ -13,6 +13,7 @@ import { SailOnScrollDirective } from './sail-on-scroll.directive';
 import { PanOnScrollDirective } from './pan-on-scroll.directive';
 import { WarehousePanOnScrollDirective } from './warehouse-pan-on-scroll.directive';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     SailOnScrollDirective,
     PanOnScrollDirective,
     WarehousePanOnScrollDirective,
-    ContactFormComponent
+    ContactFormComponent,
+    MobileHeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,40 @@
+.krit-mobile-header {
+    display: none;
+}
+
+/* For screens 768px wide or smaller */
+@media (max-width: 768px) {
+    .krit-mobile-header {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        z-index: 2;
+    }
+
+    .krit-logo {
+        background-size: contain;
+        position: relative;
+        background-repeat: no-repeat;
+        top: 10px;
+        left: 21px;
+        width: 66px;
+        height: 34px;
+    }
+
+    .menu-icon {
+        background-image: url(~/assets/images/menu_icon.svg);
+        width: 30px;
+        height: 24px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        float: right;
+        position: relative;
+        top: 20px;
+        right: 20px;
+    }
+}
