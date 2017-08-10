@@ -180,10 +180,12 @@ p.bold {
 
     p {
         margin: 0;
+        font-size: 16px;
     }
 
     p.bold {
         margin-bottom: 16px;
+        font-size: 18px;
     }
 
     .krit-content-box {
