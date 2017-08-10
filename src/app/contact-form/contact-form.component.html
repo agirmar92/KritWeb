@@ -37,10 +37,13 @@
     </div>
   </div>
 
-  <button type="submit" class="btn btn-success" [disabled]="!newMessageForm.form.valid">
-    <span *ngIf="!submitting">Senda</span>
-    <spinner *ngIf="submitting" [tickness]="1" [size]="20"></spinner>
+  <button *ngIf="!submitting" type="submit" class="btn btn-success" [disabled]="!newMessageForm.form.valid">
+    Senda
   </button>
+  <div *ngIf="submitting" class="sk-double-bounce">
+    <div class="sk-child sk-double-bounce1"></div>
+    <div class="sk-child sk-double-bounce2"></div>
+  </div>
   <p>{{responseMsg}}</p>
 
 </form>

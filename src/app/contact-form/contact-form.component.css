@@ -49,6 +49,11 @@ input {
     width: 70px;
 }
 
+.sk-double-bounce {
+    margin: 5px;
+
+}
+
 /* For screens 768px wide or smaller */
 @media (max-width: 768px) {
     .seperator {
