@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
+import { SpinnerModule } from 'angular2-spinner';
 import { ScrollToModule } from 'ng2-scroll-to';
 
 import { AppComponent } from './app.component';
@@ -31,7 +33,9 @@ import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
   imports: [
     BrowserModule,
     ScrollToModule.forRoot(),
-    FormsModule
+    SpinnerModule,
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

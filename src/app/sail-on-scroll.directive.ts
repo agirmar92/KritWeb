@@ -13,7 +13,6 @@ export class SailOnScrollDirective {
 
   @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
     const shipWidth = $event.target.body.clientWidth * 0.46;
-    console.log(shipWidth);
     if (this.currRightPos <= -shipWidth) {
       this.currRightPos = 0;
     }

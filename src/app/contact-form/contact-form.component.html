@@ -1,4 +1,4 @@
-<form #newMessageForm="ngForm">
+<form #newMessageForm="ngForm" (ngSubmit)="onSubmit()">
   <div class="form-row">
     <div class="form-group">
       <label for="name">Nafn</label>
@@ -37,6 +37,10 @@
     </div>
   </div>
 
-  <button type="submit" class="btn btn-success">Senda</button>
+  <button type="submit" class="btn btn-success" [disabled]="!newMessageForm.form.valid">
+    <span *ngIf="!submitting">Senda</span>
+    <spinner *ngIf="submitting" [tickness]="1" [size]="20"></spinner>
+  </button>
+  <p>{{responseMsg}}</p>
 
 </form>
