@@ -14,8 +14,8 @@ import { Message } from '../message';
 export class ContactFormComponent implements OnInit {
 
   public newMessage = new Message();
-  private submitting = false;
-  private responseMsg = '';
+  public submitting = false;
+  public responseMsg = '';
   private recipient = 'agirmar92@gmail.com';
   private subject = 'New message from krit.is';
   private fromWebsite = 'www.krit.is';
