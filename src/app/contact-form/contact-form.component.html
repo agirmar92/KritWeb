@@ -37,8 +37,8 @@
     </div>
   </div>
 
-  <button *ngIf="!submitting" type="submit" class="btn btn-success" [disabled]="!newMessageForm.form.valid">
-    Senda
+  <button *ngIf="!submitting" type="submit" class="krit-send-btn clickable" [disabled]="!newMessageForm.form.valid">
+    Senda umsókn
   </button>
   <div *ngIf="submitting" class="sk-double-bounce">
     <div class="sk-child sk-double-bounce1"></div>
