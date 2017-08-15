@@ -83,6 +83,10 @@ app-graphic-section.top-graphic > span > div {
     margin-bottom: 0px;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 /* For screens 768px wide or smaller */
 @media (max-width: 768px) {
     .krit-down-arrow {
@@ -95,5 +99,10 @@ app-graphic-section.top-graphic > span > div {
 
     app-content-section > div {
         margin-bottom: 0;
+    }
+
+    app-header {
+        height: calc(100vh - 60px);
+        display: block;
     }
 }

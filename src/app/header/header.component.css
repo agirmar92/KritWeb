@@ -5,6 +5,7 @@
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+    height: 100%;
 
     display: -webkit-box;
 
@@ -63,7 +64,6 @@ p {
 
     .krit-header {
         min-height: 0;
-        height: calc(100% - 60px);
         margin-top: 60px;
         background-size: 90% !important;
     }

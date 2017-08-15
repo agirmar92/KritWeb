@@ -8,9 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Krít';
   currGraphic = '';
+  menuIsOpen = false;
 
   onTopContent(contentName): void {
     this.currGraphic = contentName;
+  }
+
+  onMenuToggle(menuIsOpen): void {
+    this.menuIsOpen = menuIsOpen;
   }
 
 }

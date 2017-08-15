@@ -1,4 +1,17 @@
 <div class="krit-mobile-header">
-  <div class="krit-logo clickable" scrollTo scrollTargetSelector="#header-section"></div>
-  <div class="menu-icon clickable"></div>
+  <div class="krit-logo clickable" scrollTo scrollTargetSelector="#header-section" (click)="closeMenu()"></div>
+  <div class="menu-icon-container clickable" [class.menu-open]="menuIsOpen" (click)="toggleMenu()">
+    <div class="menu-icon-bar top"></div>
+    <div class="menu-icon-bar middle"></div>
+    <div class="menu-icon-bar bottom"></div>
+  </div>
+</div>
+
+<div class="krit-mobile-menu" [class.show-menu]="menuIsOpen">
+  <ul>
+    <li><a scrollTo href="#section-0" (click)="closeMenu()">Ný fjármögnunarleið</a></li>
+    <li><a scrollTo href="#section-1" (click)="closeMenu()">Um Krít</a></li>
+    <li><a scrollTo href="#section-2" (click)="closeMenu()">Hafðu samband</a></li>
+    <li><a scrollTo href="#section-3" (click)="closeMenu()">Samstarfsaðili</a></li>
+  </ul>
 </div>

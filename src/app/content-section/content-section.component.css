@@ -139,6 +139,10 @@ p.bold.mobile {
     display: none;
 }
 
+.hide-text p {
+    display: none;
+}
+
 /* For screens 1024px wide or smaller */
 @media (max-width: 1024px) {
     .content {
