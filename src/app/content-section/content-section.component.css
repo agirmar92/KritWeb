@@ -143,6 +143,19 @@ p.bold.mobile {
     display: none;
 }
 
+.footer {
+    text-align: center;
+    font-family: VistaSansLight;
+    font-size: 14px;
+    font-weight: 300;
+    color: #494949;
+    margin-bottom: 54px;
+}
+
+.footer > span {
+    margin: 0 15px 0 15px;
+}
+
 /* For screens 1024px wide or smaller */
 @media (max-width: 1024px) {
     .content {

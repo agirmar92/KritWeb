@@ -44,7 +44,7 @@ app-header > div {
 }
 
 app-content-section > div {
-    margin-bottom: 100vh;
+    margin-bottom: 60vh;
 }
 
 app-content-section:last-of-type > div {

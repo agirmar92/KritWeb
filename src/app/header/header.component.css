@@ -56,10 +56,59 @@ p {
     line-height: 32px;
 }
 
+.krit-logo {
+    top: 70px;
+}
+
+.menu-list {
+    display: inline-block;
+    position: absolute;
+    list-style: none;
+    left: 114px;
+    top: 230px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: VistaSansAlt;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.menu-list li {
+    margin-bottom: 23px;
+}
+
+.bookmark-graphic {
+    width: 89px;
+    height: 360px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    top: 70px;
+    left: 0px;
+    background-image: url(~/assets/images/bookmark_graphic_0.png);
+}
+
+/* For screens 1140px wide or smaller */
+@media (max-width: 1140px) {
+    .krit-header {
+        padding-left: 270px;
+        width: calc(100% - 270px);
+    }
+}
+
 /* For screens 768px wide or smaller */
 @media (max-width: 768px) {
-    .krit-down-arrow {
+    .krit-down-arrow,
+    .menu {
         display: none;
+    }
+
+    .krit-header {
+        padding-left: 0;
+        width: 100%;
     }
 
     .krit-header {

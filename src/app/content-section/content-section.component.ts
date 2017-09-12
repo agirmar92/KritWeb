@@ -10,6 +10,7 @@ export class ContentSectionComponent implements OnInit {
   @Input() bookmarkIndex: number;
   @Input() contentName: string;
   @Input() id: string;
+  @Input() includeFooter = false;
 
   @Output() topContent: EventEmitter<any> = new EventEmitter();
 
