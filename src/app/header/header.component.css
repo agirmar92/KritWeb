@@ -73,6 +73,7 @@ p {
     font-family: VistaSansAlt;
     font-weight: bold;
     letter-spacing: 0.2px;
+    text-align: left;
 }
 
 .menu-list li {

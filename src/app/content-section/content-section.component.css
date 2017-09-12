@@ -150,6 +150,10 @@ p.bold.mobile {
     font-weight: 300;
     color: #494949;
     margin-bottom: 54px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .footer > span {
@@ -181,6 +185,10 @@ p.bold.mobile {
     .content-section {
         height: auto;
         min-height: 0;
+    }
+
+    .footer {
+        position: relative;
     }
 }
 
