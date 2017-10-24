@@ -17,8 +17,8 @@
     background-size: 23%;
     background-position: center;
     background-repeat: repeat-x;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .graphic-section-palettes {
@@ -44,13 +44,170 @@
     background-repeat: repeat;
 }
 
+.expanding-box {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #EC2A29;
+}
+
+.expanding-box > .left-side {
+    background-color: #EC2A29;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: left 0.2s ease;
+    transition: left 0.2s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.expanding-box > .right-side {
+    background-color: #EC2A29;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: right 0.2s ease;
+    transition: right 0.2s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.expanding-box > h1 {
+    color: white;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    line-height: 100vh;
+}
+
+.expanding-box > .box {
+    height: 256px;
+    width: 226px;
+    left: calc(50% - 113px);
+    top: calc(50% - 130px);
+    position: absolute;
+}
+
+.expanding-box > .box > .top-left {
+backface-visibility: hidden;
+    background-image: url(~/assets/hype/krit_vefur_fleki.hyperesources/PastedVector-1.svg);
+    background-repeat: no-repeat;
+    overflow: visible;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    width: 114px;
+    height: 192px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.expanding-box > .box > .top {
+    backface-visibility: hidden;
+    background-image: url(~/assets/hype/krit_vefur_fleki.hyperesources/PastedVector-2.svg);
+    background-repeat: no-repeat;
+    overflow: visible;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 226px;
+    height: 128px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.expanding-box > .box > .top-right {
+    backface-visibility: hidden;
+    background-image: url(~/assets/hype/krit_vefur_fleki.hyperesources/PastedVector.svg);
+    background-repeat: no-repeat;
+    overflow: visible;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    width: 114px;
+    height: 192px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.expanding-box > .box > .bottom-left {
+    backface-visibility: hidden;
+    background-image: url(~/assets/hype/krit_vefur_fleki.hyperesources/PastedVector.svg);
+    background-repeat: no-repeat;
+    overflow: visible;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    width: 114px;
+    height: 192px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.expanding-box > .box > .bottom {
+    backface-visibility: hidden;
+    background-image: url(~/assets/hype/krit_vefur_fleki.hyperesources/PastedVector-2.svg);
+    background-repeat: no-repeat;
+    overflow: visible;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 226px;
+    height: 128px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.expanding-box > .box > .bottom-right {
+    backface-visibility: hidden;
+    background-image: url(~/assets/hype/krit_vefur_fleki.hyperesources/PastedVector-1.svg);
+    background-repeat: no-repeat;
+    overflow: visible;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 8;
+    width: 114px;
+    height: 192px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
 .graphic-section-warehouse {
     background-image: url(~/assets/images/warehouse.svg);
     overflow: hidden;
     background-size: cover;
     background-position-x: 0px;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     position: fixed;
     top: 0;
     left: 0;
@@ -62,8 +219,8 @@
     background-color: #F3F9FC;
     overflow: hidden;
     background-size: 60%;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     background-repeat: no-repeat;
     background-position: center;
     position: fixed;
@@ -95,6 +252,24 @@ h1 {
     h1 {
         font-size: 28px;
         margin-top: 52px;
+    }
+
+    .expanding-box > .left-side {
+        display: none;
+    }
+
+    .expanding-box > .right-side {
+        display: none;
+    }
+
+    .expanding-box > .box {
+        top: 30%;
+    }
+
+    .expanding-box > h1 {
+        height: 100%;
+        line-height: initial;
+        padding-top: 18px;
     }
 }
 

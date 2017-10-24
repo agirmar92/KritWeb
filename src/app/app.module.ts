@@ -15,6 +15,14 @@ import { PanOnScrollDirective } from './pan-on-scroll.directive';
 import { WarehousePanOnScrollDirective } from './warehouse-pan-on-scroll.directive';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
+import { MoveToLeftOnScrollDirective } from './move-to-left-on-scroll.directive';
+import { MoveToRightOnScrollDirective } from './move-to-right-on-scroll.directive';
+import { MoveLeftUpOnScrollDirective } from './move-left-up-on-scroll.directive';
+import { MoveLeftDownOnScrollDirective } from './move-left-down-on-scroll.directive';
+import { MoveDownOnScrollDirective } from './move-down-on-scroll.directive';
+import { MoveRightUpOnScrollDirective } from './move-right-up-on-scroll.directive';
+import { MoveUpOnScrollDirective } from './move-up-on-scroll.directive';
+import { MoveRightDownOnScrollDirective } from './move-right-down-on-scroll.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +35,15 @@ import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
     PanOnScrollDirective,
     WarehousePanOnScrollDirective,
     ContactFormComponent,
-    MobileHeaderComponent
+    MobileHeaderComponent,
+    MoveToLeftOnScrollDirective,
+    MoveToRightOnScrollDirective,
+    MoveLeftUpOnScrollDirective,
+    MoveLeftDownOnScrollDirective,
+    MoveDownOnScrollDirective,
+    MoveRightUpOnScrollDirective,
+    MoveUpOnScrollDirective,
+    MoveRightDownOnScrollDirective
   ],
   imports: [
     BrowserModule,
