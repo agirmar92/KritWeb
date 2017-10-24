@@ -4,7 +4,20 @@
   </div>
   
   <div *ngSwitchCase="'palettes'" class="graphic-section-palettes">
-    <div class="palettes" appPanOnScroll></div>
+    <div class="expanding-box">
+      <div class="box">
+        <div class="top-left" appMoveLeftUpOnScroll></div>
+        <div class="top" appMoveUpOnScroll></div>
+        <div class="top-right" appMoveRightUpOnScroll></div>
+        <div class="bottom-left" appMoveLeftDownOnScroll></div>
+        <div class="bottom" appMoveDownOnScroll></div>
+        <div class="bottom-right" appMoveRightDownOnScroll></div>
+      </div>
+      <div class="left-side" appMoveToLeftOnScroll></div>
+      <div class="right-side" appMoveToRightOnScroll></div>
+      <h1>Ný og einföld fjármögnunarleið</h1>
+    </div>
+    <!-- <div class="palettes" appPanOnScroll></div> -->
   </div>
 
   <div *ngSwitchCase="'warehouse'" class="graphic-section-warehouse" appWarehousePanOnScroll>
