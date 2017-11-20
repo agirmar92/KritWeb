@@ -16,7 +16,7 @@ export class ContactFormComponent implements OnInit {
   public newMessage = new Message();
   public submitting = false;
   public responseMsg = '';
-  private recipient = 'agirmar92@gmail.com';
+  private recipient = 'kfl@kfl.is';
   private subject = 'New message from krit.is';
   private fromWebsite = 'www.krit.is';
   private apiEndpointUrl = 'http://api.vefsidugerdin.is/send';
