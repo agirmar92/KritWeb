@@ -52,8 +52,8 @@ app-content-section:last-of-type > div {
 }
 
 .krit-logo {
-    width: 127px;
-    height: 65px;
+    width: 134px;
+    height: 89px;
     background-image: url(~/assets/images/krit_logo.png);
     background-size: cover;
     position: absolute;
