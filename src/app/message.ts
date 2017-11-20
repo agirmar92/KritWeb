@@ -4,5 +4,7 @@ export class Message {
     public ssn: string;
     public email: string;
     public phoneNumber: string;
-    public messageText: string;
+    public productType: string;
+    public amountNeeded: string;
+    public other: string;
 }

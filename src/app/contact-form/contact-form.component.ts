@@ -30,13 +30,15 @@ export class ContactFormComponent implements OnInit {
       const payload = {
         'recipient': this.recipient,
         'subject': this.subject,
-        'message': this.newMessage.messageText,
+        'other': this.newMessage.other,
         'fromWebsite': this.fromWebsite,
         'senderEmail': this.newMessage.email,
         'senderName': this.newMessage.name,
         'senderSSN': this.newMessage.ssn,
         'senderCompany': this.newMessage.company,
-        'senderTel': this.newMessage.phoneNumber
+        'senderTel': this.newMessage.phoneNumber,
+        'senderProductType': this.newMessage.productType,
+        'senderAmountNeeded': this.newMessage.amountNeeded
       };
 
       this.submitting = true;
