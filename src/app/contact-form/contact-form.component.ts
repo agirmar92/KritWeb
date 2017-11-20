@@ -17,8 +17,8 @@ export class ContactFormComponent implements OnInit {
   public submitting = false;
   public responseMsg = '';
   private recipient = 'kfl@kfl.is';
-  private subject = 'New message from krit.is';
-  private fromWebsite = 'www.krit.is';
+  private subject = 'New message from kfl.is';
+  private fromWebsite = 'www.kfl.is';
   private apiEndpointUrl = 'http://api.vefsidugerdin.is/send';
 
   constructor(private http: Http) { }
@@ -30,7 +30,7 @@ export class ContactFormComponent implements OnInit {
       const payload = {
         'recipient': this.recipient,
         'subject': this.subject,
-        'other': this.newMessage.other,
+        'other': this.newMessage.other ? this.newMessage.other : '',
         'fromWebsite': this.fromWebsite,
         'senderEmail': this.newMessage.email,
         'senderName': this.newMessage.name,
@@ -46,14 +46,15 @@ export class ContactFormComponent implements OnInit {
         .subscribe(
           res => {
             // Success
+            this.submitting = false;
             this.responseMsg = 'Skilaboð hafa verið send';
             this.clearForm();
           },
           err => {
             // Error
+            this.submitting = false;
             this.responseMsg = 'Eitthvað fór úrskeiðis. Endilega sendu okkur tölvupóst á ' + this.recipient;
-          },
-          () => this.submitting = false
+          }
         );
     }
 
